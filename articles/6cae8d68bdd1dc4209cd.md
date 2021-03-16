@@ -3,7 +3,7 @@ title: "いつかサーバーを閉じるとき 〜お金をかけずに 410 を
 emoji: "🌐"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Fediverse", "Mastodon", "Netlify"]
-published: false
+published: true
 ---
 
 この記事は [Fediverse Advent Calendar 2020](https://adventar.org/calendars/6046) 9日目の記事です。
@@ -49,13 +49,13 @@ Netlify にデプロイするには、自分のリポジトリである必要が
 
 1. サイトを作る
 New site from Git を押す
-![netlify-overview.png](https://crieit.now.sh/upload_images/9ab377531ab3126d06ef6296ee2795cf5fd2077711a40.png)
+![Netlify Overview](https://storage.googleapis.com/zenn-user-upload/dplv0jnj7mfwcsppo6mo54hkuop9)
 GitHub 等のアカウントと連携させる画面が出てきます。Forkしたリポジトリがあるサービスを選択して連携させます。
-![netlify-step1.png](https://crieit.now.sh/upload_images/ea01dd6e0dc74e5f7a096d9c9dd01f185fd20799358d9.png)
+![Netlify Step1](https://storage.googleapis.com/zenn-user-upload/le76safsuvli34xqfh7ihvlwhax6)
 連携させると、リポジトリを選択するのが出てくるので、netlify-410 を選択
-![netlify-step2.png](https://crieit.now.sh/upload_images/0fb23782be8272ab15a6689ee3ff45a35fd207c546b86.png)
+![Netlify Step2](https://storage.googleapis.com/zenn-user-upload/jcd7rd0xpoboq22xsvwf35ejicxm)
 ビルド設定はそのままで動きます。Deploy siteを押すとサイトができます。
-![netlify-step3.png](https://crieit.now.sh/upload_images/79e9f828e38904172fac66c7cf8c4c5e5fd207eadef08.png)
+![Netlify Step3](https://storage.googleapis.com/zenn-user-upload/iaqlzclgqpfv7nrg14hxmz4qy28w)
 
 1. ドメインの設定をする
 Site setting → Domain management → Custom domains からドメインを追加します。
@@ -64,15 +64,15 @@ Site setting → Domain management → Custom domains からドメインを追�
 ※ 自分のドメインでアクセスできるようになるまでしばらく時間がかかります。気長に待ちましょう。
 このへんが全部終わったら、Webブラウザからアクセスしてみましょう。
 こんな画面が出ていればOKです！
-![netlify-step4.png](https://crieit.now.sh/upload_images/d6f7c84d1aeb3028aea1bc12ca37a0545fd208010bfc7.png)
+![Netlify Step4](https://storage.googleapis.com/zenn-user-upload/upcqh7er87lyom3ti3x8grns3l7l)
 
 ## 本当に410返してんの？
 
 Webブラウザの開発者ツールを使って、本当に410を返してるのか見てみましょう。ステータスが410になっていますね？
-![netlify-confirm-1.png](https://crieit.now.sh/upload_images/70244be269c5d227f7d3022f18a5af2d5fd20811ea6c7.png)
+![Confirm return HTTP410](https://storage.googleapis.com/zenn-user-upload/9p4pxi9rdf5zpvau5z3l7ob56ndu)
 
 他のサーバーから配信を受ける /inbox も見てみましょう。410なのでオッケー。
-![netlify-confirm-2.png](https://crieit.now.sh/upload_images/197ffdb91ab6c414648413f02a4ed3315fd2081fcfd23.png)
+![Confirm return HTTO410](https://storage.googleapis.com/zenn-user-upload/s8vnl58q9gcn7mzojurxq8ulizh5)
 
 これで、410を無料で連合しているサーバーに返すことができます。
 
