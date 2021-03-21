@@ -56,6 +56,8 @@ GitHub 等のアカウントと連携させる画面が出てきます。Forkし
 ![Netlify Step2](https://storage.googleapis.com/zenn-user-upload/jcd7rd0xpoboq22xsvwf35ejicxm)
 ビルド設定はそのままで動きます。Deploy siteを押すとサイトができます。
 ![Netlify Step3](https://storage.googleapis.com/zenn-user-upload/iaqlzclgqpfv7nrg14hxmz4qy28w)
+2021年3月22日 追記
+ここまでの操作は、GithubのREADME.md にある Deploy to Netlify ボタンでワンクリックでサイトが作成できるようになりました！
 
 1. ドメインの設定をする
 Site setting → Domain management → Custom domains からドメインを追加します。
